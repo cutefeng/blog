@@ -1,0 +1,12 @@
+ *{margin:0;padding:0;}
+#container{width:100%;}
+.header{background:url("../images/template.jpg");height:75px;color:#fff;font-size:24px;line-height:75px;padding-left:20px;}
+.box .left{width:255px;height:100%;float:left;}
+.box .left p{height:40px;border-bottom:1px solid #fff;line-height:40px;padding-left:20px;transition:all 0.3s ease-in-out;}
+.box .left p:hover{background:#fff;transition:all 0.3s ease-in-out;}
+.box .left p a{display:block;}
+.box .left p a:before{content:"★"}
+.box .left p a:after{content:"★"}
+.box .left p:hover a{color:#333;}
+.box .left p.selected{color:#333;background:#fff;}
+.box .right{margin-left:255px !important;margin-left:252px;background:#fff;}

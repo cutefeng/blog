@@ -1,10 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>我的第一个网页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>资源库</title>
+    <meta name="Keywords" content="关键词,关键词">
+    <meta name="description" content="">
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
+
+    <script type="text/javascript">
+        function loading() {
+            var silderBox = document.getElementById("sliderbox");
+            var adoms = silderBox.getElementsByTagName("a");
+            var len = adoms.length;
+            while (len--) {
+                adoms[len].onclick = function () {
+                    var src = this.getAttribute("data-src");
+                    $(this).parent().addClass("selected").siblings().removeClass("selected");
+                    document.getElementById("iframbox").src = src;
+                }
+            };
+        };
+        window.onload = loading;
+    </script>
+    <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="js/tz_slider.js"></script>
 </head>
 <body>
-	<h1>我在github创建的第一个页面，哈哈哈</h1>
+<div id="container">
+    <div class="header">老猫-Carol资源库</div>
+    <div class="box">
+        <div class="left" id="sliderbox">
+            <div class="menubox">
+                <h1>老猫--知识点案例集锦</h1>
+                <div class="menu" id="menubox">
+                    <ul>
+                        <li>
+                            <a class="menuclick" href="#"><i>-</i>HTML+CSS</a>
+                            <ul class="submenu">
+                                <li><a href="javascript:void(0);" data-src="0">知识点1</a></li>
+                                <li><a href="javascript:void(0);" data-src="0">知识点2</a></li>
+                                <li><a href="javascript:void(0);" data-src="0">知识点3</a></li>
+                                <li><a href="javascript:void(0);" data-src="0">知识点4</a></li>
+                                <li><a href="javascript:void(0);" data-src="0">知识点5</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menuclick" href="#"><i>+</i>js+jq</a>
+                            <ul class="submenu" style="display:none;">
+                                <li><a href="javascript:void(0);" data-src="exam/10/01.html">知识点1</a></li>
+                                <li><a href="javascript:void(0);" data-src="exam/10/02.html">知识点2</a></li>
+                                <li><a href="javascript:void(0);" data-src="exam/10/04.html">知识点3</a></li>
+                                <li><a href="javascript:void(0);" data-src="exam/10/06.html">知识点4</a></li>
+                                <li><a href="javascript:void(0);" data-src="exam/10/03.html">知识点5</a></li>
+                                <li><a href="javascript:void(0);" data-src="exam/10/07.html">知识点6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menuclick" href="#"><i>+</i>动画特效</a>
+                            <ul class="submenu" style="display:none;">
+                                <li><a href="javascript:void(0);" data-src="0">banner图</a></li>
+                                <li><a href="javascript:void(0);" data-src="0">百叶窗</a></li>
+                                <li><a href="javascript:void(0);" data-src="0">table选项卡</a></li>
+                                <li><a href="javascript:void(0);" data-src="1">改变字体和颜色</a></li>
+                                <li><a href="javascript:void(0);" data-src="1">三角形</a></li>
+                                <li><a href="javascript:void(0);" data-src="1">音乐播放器</a></li>
+                                <li><a href="javascript:void(0);" data-src="1">弹幕技术</a></li>
+                                <li><a href="javascript:void(0);" data-src="1">3D动画</a></li>
+                                <li><a href="javascript:void(0);" data-src="1">dom元素动态操作表单</a></li>
+                                <li><a href="javascript:void(0);" data-src="1">CSS3banner效果 </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menuclick" href="#"><i>+</i>项目案列</a>
+                            <ul class="submenu" style="display:none;">
+                                <li><a href="javascript:void(0);" data-src="1">京东商城 </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">天猫商城 </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">小米官网</a></li>
+                                <li><a href="javascript:void(0);" data-src="1">搜了网 </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">虎嗅网 </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">36Kr </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">猫扑 </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">豆瓣 </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">马蜂窝 </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">珍品网 </a></li>
+                                <li><a href="javascript:void(0);" data-src="1">乐乎首页 </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <iframe id="iframbox" src=11" width="100%" frameborder="0" height="1200"/>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

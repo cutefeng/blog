@@ -15,13 +15,13 @@
             var silderBox = document.getElementById("sliderbox");
             var adoms = silderBox.getElementsByTagName("a");
             var len = adoms.length;
-            while (len--) {
-                adoms[len].onclick = function () {
-                    var src = this.getAttribute("data-src");
-                    $(this).parent().addClass("selected").siblings().removeClass("selected");
-                    document.getElementById("iframbox").src = src;
-                }
-            };
+            // while (len--) {
+            //     adoms[len].onclick = function () {
+            //         var src = this.getAttribute("data-src");
+            //         $(this).parent().addClass("selected").siblings().removeClass("selected");
+            //         document.getElementById("iframbox").src = src;
+            //     }
+            // };
         };
         window.onload = loading;
     </script>
@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="right">
-            <iframe id="iframbox" src=11" width="100%" frameborder="0" height="1200"/>
+            <!-- <iframe id="iframbox" src=11" width="100%" frameborder="0" height="1200"/> -->
         </div>
     </div>
 </div>
